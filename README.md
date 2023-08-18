@@ -22,7 +22,7 @@ Javascript, HTML, CSS.
 
 ## Used By
 
-This project can be used by anyone.
+This project can be used by anyone to tell the time.
 
 
 ## Authors
