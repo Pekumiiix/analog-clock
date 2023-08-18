@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.hour {
+    width: 4px;
+    height: 70px;
+    background-color: black;
+    left: 150px;
+    bottom: 148px;
+    position: absolute;
+    transform-origin: 0% 100%;
+}
+
+.second {
+    width: 2px;
+    height: 130px;
+    background-color: black;
+    bottom: 150px;
+    right: 149px;
+    position: absolute;
+    opacity: 50%;
+    transform-origin: 0% 100%;
+}
+
+.minute {
+    width: 2px;
+    height: 105px;
+    background-color: black;
+    right: 149px;
+    bottom: 150px;
+    position: absolute;
+    transform-origin: 0% 100%;
+}
+
+.center {
+    bottom: 145px;
+    right: 147px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.twelve {
+    top: 0px;
+    height: 15px;
+    width: 4px;
+    background-color: black;
+    left: 148px;
+    position: absolute;
+}
+
+.six {
+    bottom: 0px;
+    position: absolute;
+    left: 148px;
+    width: 4px;
+    height: 15px;
+    background-color: black;
+}
+
+.three {
+    right: 5.5px;
+    top: 147px;
+    width: 4px;
+    height: 15px;
+    position: absolute;
+    transform: rotate(90deg);
+    background-color: black;
+}
+
+.nine {
+    left: 5.5px;
+    top: 148px;
+    width: 4px;
+    height: 15px;
+    position: absolute;
+    transform: rotate(270deg);
+    background-color: black;
+}
+
+.twelve p {
+    margin-top: 25px;
+    margin-left: -8px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.six p {
+    margin-top: -25px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: -3px;
+}
+
+.nine p {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: -2px;
+    transform: rotate(90deg);
+}
+
+.three p {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+    transform: rotate(270deg);
+}
+
+@media screen and (max-width: 300px) {
+    .clock {
+        width: 240px;
+        height: 240px;
+        margin-left: -6%;
+    }
+
+    .second {
+        left: 122px;
+        bottom: 120px;
+        height: 100px;
+    }
+
+    .hour {
+        left: 122px;
+        bottom: 120px;
+        height: 60px;
+    }
+
+    .minute {
+        left: 124px;
+        bottom: 120px;
+        height: 80px;
+    }
+
+    .center {
+        left: 118px;
+        bottom: 118px;
+    }
+
+    .twelve {
+        left: 120px;
+    }
+
+    .six {
+        left: 120px;
+    }
+
+    .nine {
+        top: 120px;
+    }
+
+    .three {
+        top: 120px;
+    }
+}
